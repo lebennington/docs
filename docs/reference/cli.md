@@ -1,3 +1,7 @@
+---
+icon: bi:terminal-fill
+---
+
 # Command Line Interface
 
 <NpmBadge package="@vuepress/cli" />

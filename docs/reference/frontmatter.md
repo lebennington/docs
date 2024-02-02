@@ -1,3 +1,7 @@
+---
+icon: fa-solid:bars
+---
+
 # Frontmatter
 
 <NpmBadge package="@vuepress/client" />
@@ -39,15 +43,15 @@
 
 - Example:
 
-```md
----
-head:
-  - - meta
-    - name: foo
-      content: yaml array syntax
-  - [meta, { name: bar, content: square brackets syntax }]
----
-```
+  ```md
+  ---
+  head:
+    - - meta
+      - name: foo
+        content: yaml array syntax
+    - [meta, { name: bar, content: square brackets syntax }]
+  ---
+  ```
 
 Rendered as:
 
@@ -160,12 +164,12 @@ layout: CustomLayout
 
   The page frontmatter is:
 
-```md
----
-date: 2021-01-03
-permalinkPattern: :year/:month/:day/:slug.html
----
-```
+  ```md
+  ---
+  date: 2021-01-03
+  permalinkPattern: :year/:month/:day/:slug.html
+  ---
+  ```
 
 Then the permalink of the page would be `2021/01/03/foo-bar.html`.
 
@@ -175,11 +179,11 @@ Then the permalink of the page would be `2021/01/03/foo-bar.html`.
 
   The page frontmatter is:
 
-```md
----
-permalinkPattern: :year/:month/:day/:slug.html
----
-```
+  ```md
+  ---
+  permalinkPattern: :year/:month/:day/:slug.html
+  ---
+  ```
 
 Then the permalink of the page would be `2021/01/03/bar-baz.html`.
 

@@ -1,3 +1,7 @@
+---
+icon: bi:terminal-fill
+---
+
 # 命令行接口
 
 <NpmBadge package="@vuepress/cli" />

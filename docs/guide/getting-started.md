@@ -1,3 +1,7 @@
+---
+icon: fa6-solid:lightbulb
+---
+
 # Getting Started
 
 ::: warning
@@ -67,39 +71,36 @@ cd vuepress-starter
 
 - Initialize your project
 
-<CodeGroup>
-  <CodeGroupItem title="pnpm" active>
+::: code-tabs#shell
+
+@tab:active pnpm
 
 ```bash
 git init
 pnpm init
 ```
 
-  </CodeGroupItem>
-
-  <CodeGroupItem title="yarn">
+@tab yarn
 
 ```bash
 git init
 yarn init
 ```
 
-  </CodeGroupItem>
-
-  <CodeGroupItem title="npm">
+@tab npm
 
 ```bash
 git init
 npm init
 ```
 
-  </CodeGroupItem>
-</CodeGroup>
+:::
 
 - Install VuePress
 
-<CodeGroup>
-  <CodeGroupItem title="pnpm" active>
+::: code-tabs#shell
+
+@tab:active pnpm
 
 ```bash
 # install vuepress and vue
@@ -108,9 +109,7 @@ pnpm add -D vuepress@next vue
 pnpm add -D @vuepress/bundler-vite@next @vuepress/theme-default@next
 ```
 
-  </CodeGroupItem>
-
-  <CodeGroupItem title="yarn">
+@tab yarn
 
 ```bash
 # install vuepress
@@ -119,9 +118,7 @@ yarn add -D vuepress@next
 yarn add -D @vuepress/bundler-vite@next @vuepress/theme-default@next
 ```
 
-  </CodeGroupItem>
-
-  <CodeGroupItem title="npm">
+@tab pnpm
 
 ```bash
 # install vuepress
@@ -130,8 +127,7 @@ npm install -D vuepress@next
 npm install -D @vuepress/bundler-vite@next @vuepress/theme-default@next
 ```
 
-  </CodeGroupItem>
-</CodeGroup>
+:::
 
 - Create `docs` directory and `docs/.vuepress` directory
 
@@ -205,31 +201,27 @@ You can add some [scripts](https://classic.yarnpkg.com/en/docs/package-json#toc-
 
 Then, run `docs:dev` script to start the dev server:
 
-<CodeGroup>
-  <CodeGroupItem title="pnpm" active>
+::: code-tabs#shell
+
+@tab:active pnpm
 
 ```bash
 pnpm docs:dev
 ```
 
-  </CodeGroupItem>
-
-  <CodeGroupItem title="yarn">
+@tab yarn
 
 ```bash
 yarn docs:dev
 ```
 
-  </CodeGroupItem>
-
-  <CodeGroupItem title="npm">
+@tab npm
 
 ```bash
 npm run docs:dev
 ```
 
-  </CodeGroupItem>
-</CodeGroup>
+:::
 
 VuePress will start a hot-reloading development server at [http://localhost:8080](http://localhost:8080). When you modify your markdown files, the content in the browser will be auto updated.
 

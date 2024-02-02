@@ -1,6 +1,6 @@
-import type { SidebarConfig } from '@vuepress/theme-default'
+import { sidebar } from 'vuepress-theme-hope'
 
-export const sidebarZh: SidebarConfig = {
+export const zhSidebar = sidebar({
   '/zh/guide/': [
     {
       text: '指南',
@@ -24,50 +24,54 @@ export const sidebarZh: SidebarConfig = {
   '/zh/advanced/': [
     {
       text: '深入',
-      children: [
-        '/zh/advanced/architecture.md',
-        '/zh/advanced/plugin.md',
-        '/zh/advanced/theme.md',
-      ],
+      icon: 'fa6-solid:gem',
+      children: ['architecture', 'plugin', 'theme'],
     },
     {
       text: 'Cookbook',
+      icon: 'fa6-solid:signs-post',
+      prefix: 'cookbook/',
       children: [
-        '/zh/advanced/cookbook/README.md',
-        '/zh/advanced/cookbook/usage-of-client-config.md',
-        '/zh/advanced/cookbook/adding-extra-pages.md',
-        '/zh/advanced/cookbook/making-a-theme-extendable.md',
-        '/zh/advanced/cookbook/passing-data-to-client-code.md',
-        '/zh/advanced/cookbook/markdown-and-vue-sfc.md',
+        '',
+        'usage-of-client-config',
+        'adding-extra-pages',
+        'making-a-theme-extendable',
+        'passing-data-to-client-code',
+        'markdown-and-vue-sfc',
       ],
     },
   ],
   '/zh/reference/': [
     {
       text: 'VuePress 参考',
+      icon: 'fa6-brands:vuejs',
       collapsible: true,
       children: [
-        '/zh/reference/cli.md',
-        '/zh/reference/config.md',
-        '/zh/reference/frontmatter.md',
-        '/zh/reference/components.md',
-        '/zh/reference/plugin-api.md',
-        '/zh/reference/theme-api.md',
-        '/zh/reference/client-api.md',
-        '/zh/reference/node-api.md',
+        '/zh/reference/cli',
+        '/zh/reference/config',
+        '/zh/reference/frontmatter',
+        '/zh/reference/components',
+        '/zh/reference/plugin-api',
+        '/zh/reference/theme-api',
+        '/zh/reference/client-api',
+        '/zh/reference/node-api',
       ],
     },
     {
       text: '打包工具参考',
+      icon: 'fa6-solid:boxes-packing',
+      prefix: 'bundler/',
       collapsible: true,
-      children: [
-        '/zh/reference/bundler/vite.md',
-        '/zh/reference/bundler/webpack.md',
-      ],
+      children: ['vite', 'webpack'],
     },
     {
       text: '官方生态系统',
       link: 'https://ecosystem.vuejs.press/zh/',
     },
+    {
+      text: 'VuePress 市场',
+      icon: 'fa6-solid:cart-shopping',
+      link: 'https://marketplace.vuejs.press/zh/',
+    },
   ],
-}
+})

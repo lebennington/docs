@@ -1,3 +1,7 @@
+---
+icon: fa6-solid:gear
+---
+
 # Config
 
 <NpmBadge package="@vuepress/cli" />

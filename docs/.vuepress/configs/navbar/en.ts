@@ -1,9 +1,10 @@
-import type { NavbarConfig } from '@vuepress/theme-default'
+import { navbar } from 'vuepress-theme-hope'
 import { version } from '../meta.js'
 
-export const navbarEn: NavbarConfig = [
+export const enNavbar = navbar([
   {
     text: 'Guide',
+    icon: 'fa6-solid:lightbulb',
     children: [
       '/guide/introduction.md',
       '/guide/getting-started.md',
@@ -22,45 +23,48 @@ export const navbarEn: NavbarConfig = [
   },
   {
     text: 'Reference',
+    icon: 'fa6-solid:book',
+    prefix: '/reference/',
     children: [
       {
         text: 'VuePress',
         children: [
           {
             text: 'CLI',
-            link: '/reference/cli.html',
+            icon: 'bi:terminal-fill',
+            link: 'cli.html',
           },
-          '/reference/config.md',
-          '/reference/frontmatter.md',
-          '/reference/components.md',
-          '/reference/plugin-api.md',
-          '/reference/theme-api.md',
-          '/reference/client-api.md',
-          '/reference/node-api.md',
+          'config',
+          'frontmatter',
+          'components',
+          'plugin-api',
+          'theme-api',
+          'client-api',
+          'node-api',
         ],
       },
       {
         text: 'Bundlers',
-        children: [
-          '/reference/bundler/vite.md',
-          '/reference/bundler/webpack.md',
-        ],
+        prefix: 'bundler/',
+        children: ['vite', 'webpack'],
       },
     ],
   },
 
   {
     text: 'Learn More',
+    icon: 'fa6-solid:feather',
     children: [
       {
         text: 'Advanced',
+        prefix: '/advanced/',
         children: [
-          '/advanced/architecture.md',
-          '/advanced/plugin.md',
-          '/advanced/theme.md',
+          'architecture',
+          'plugin',
+          'theme',
           {
             text: 'Cookbook',
-            link: '/advanced/cookbook/',
+            link: 'cookbook/',
           },
         ],
       },
@@ -85,19 +89,22 @@ export const navbarEn: NavbarConfig = [
   },
   {
     text: `v${version}`,
+    icon: 'fa6-solid:tag',
     children: [
       {
         text: 'Changelog',
-        link: 'https://github.com/vuepress/core/blob/main/CHANGELOG.md',
+        link: 'https://github.com/vuepress/vuepress-next/blob/main/CHANGELOG.md',
       },
       {
         text: 'v1.x',
+        icon: 'fa6-brands:vuejs',
         link: 'https://v1.vuepress.vuejs.org',
       },
       {
         text: 'v0.x',
+        icon: 'fa6-brands:vuejs',
         link: 'https://v0.vuepress.vuejs.org',
       },
     ],
   },
-]
+])

@@ -1,6 +1,6 @@
-import type { SidebarConfig } from '@vuepress/theme-default'
+import { sidebar } from 'vuepress-theme-hope'
 
-export const sidebarEn: SidebarConfig = {
+export const enSidebar = sidebar({
   '/guide/': [
     {
       text: 'Guide',
@@ -24,47 +24,54 @@ export const sidebarEn: SidebarConfig = {
   '/advanced/': [
     {
       text: 'Advanced',
-      children: [
-        '/advanced/architecture.md',
-        '/advanced/plugin.md',
-        '/advanced/theme.md',
-      ],
+      icon: 'fa6-solid:gem',
+      children: ['architecture', 'plugin', 'theme'],
     },
     {
       text: 'Cookbook',
+      icon: 'fa6-solid:signs-post',
+      prefix: 'cookbook/',
       children: [
-        '/advanced/cookbook/README.md',
-        '/advanced/cookbook/usage-of-client-config.md',
-        '/advanced/cookbook/adding-extra-pages.md',
-        '/advanced/cookbook/making-a-theme-extendable.md',
-        '/advanced/cookbook/passing-data-to-client-code.md',
-        '/advanced/cookbook/markdown-and-vue-sfc.md',
+        '',
+        'usage-of-client-config',
+        'adding-extra-pages',
+        'making-a-theme-extendable',
+        'passing-data-to-client-code',
+        'markdown-and-vue-sfc',
       ],
     },
   ],
   '/reference/': [
     {
       text: 'VuePress Reference',
+      icon: 'fa6-brands:vuejs',
       collapsible: true,
       children: [
-        '/reference/cli.md',
-        '/reference/config.md',
-        '/reference/frontmatter.md',
-        '/reference/components.md',
-        '/reference/plugin-api.md',
-        '/reference/theme-api.md',
-        '/reference/client-api.md',
-        '/reference/node-api.md',
+        'cli',
+        'config',
+        'frontmatter',
+        'components',
+        'plugin-api',
+        'theme-api',
+        'client-api',
+        'node-api',
       ],
     },
     {
       text: 'Bundlers Reference',
+      icon: 'fa6-solid:boxes-packing',
+      prefix: 'bundler/',
       collapsible: true,
-      children: ['/reference/bundler/vite.md', '/reference/bundler/webpack.md'],
+      children: ['vite', 'webpack'],
     },
     {
       text: 'Official Ecosystem',
       link: 'https://ecosystem.vuejs.press/',
     },
+    {
+      text: 'VuePress MarketPlace',
+      icon: 'fa6-solid:cart-shopping',
+      link: 'https://marketplace.vuejs.press',
+    },
   ],
-}
+})

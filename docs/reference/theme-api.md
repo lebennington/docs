@@ -1,3 +1,7 @@
+---
+icon: fa6-solid:palette
+---
+
 # Theme API
 
 <NpmBadge package="@vuepress/core" />

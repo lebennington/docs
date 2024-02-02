@@ -1,3 +1,7 @@
+---
+icon: fa6-solid:boxes-packing
+---
+
 # 打包工具
 
 VuePress 支持使用 [Vite](https://vitejs.dev/) 或 [Webpack](https://webpack.js.org/) 作为打包工具来进行网站的开发和构建。你可以根据自己的喜好来选择使用哪个打包工具，并且不需要进行额外的配置。
@@ -6,8 +10,9 @@ VuePress 支持使用 [Vite](https://vitejs.dev/) 或 [Webpack](https://webpack.
 
 在安装 [vuepress](https://www.npmjs.com/package/vuepress) 包时，并不会自动安装打包工具，你需要选择并安装一个打包工具。
 
-<CodeGroup>
-  <CodeGroupItem title="pnpm" active>
+::: code-tabs#shell
+
+@tab:active pnpm
 
 ```bash
 # 安装 vite 打包工具
@@ -16,9 +21,7 @@ pnpm add -D vuepress@next @vuepress/bundler-vite@next
 pnpm add -D vuepress@next @vuepress/bundler-webpack@next
 ```
 
-  </CodeGroupItem>
-
-  <CodeGroupItem title="yarn">
+@tab yarn
 
 ```bash
 # 安装 vite 打包工具
@@ -27,9 +30,7 @@ yarn add -D vuepress@next @vuepress/bundler-vite@next
 yarn add -D vuepress@next @vuepress/bundler-webpack@next
 ```
 
-  </CodeGroupItem>
-
-  <CodeGroupItem title="npm">
+@tab pnpm
 
 ```bash
 # 安装 vite 打包工具
@@ -38,8 +39,7 @@ npm install -D vuepress@next @vuepress/bundler-vite@next
 npm install -D vuepress@next @vuepress/bundler-webpack@next
 ```
 
-  </CodeGroupItem>
-</CodeGroup>
+:::
 
 ## 使用打包工具
 

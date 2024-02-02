@@ -1,3 +1,7 @@
+---
+icon: fa-solid:bars
+---
+
 # Frontmatter
 
 <NpmBadge package="@vuepress/client" />

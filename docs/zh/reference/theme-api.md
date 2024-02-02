@@ -1,3 +1,7 @@
+---
+icon: fa6-solid:palette
+---
+
 # 主题 API
 
 <NpmBadge package="@vuepress/core" />

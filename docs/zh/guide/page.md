@@ -1,3 +1,7 @@
+---
+icon: fa6-solid:file
+---
+
 # 页面
 
 VuePress 是以 Markdown 为中心的。你项目中的每一个 Markdown 文件都是一个单独的页面。
@@ -52,6 +56,7 @@ description: 页面的描述
 同样的，VuePress 有一些内置支持的 Frontmatter 字段，而你使用的主题也可能有它自己的特殊 Frontmatter 。
 
 ::: tip
+
 前往 [Frontmatter 参考](../reference/frontmatter.md) 查看 VuePress 支持的 Frontmatter 配置。
 
 前往 [默认主题 > Frontmatter 参考](https://ecosystem.vuejs.press/zh/themes/default/frontmatter.html) 查看默认主题的 Frontmatter 配置。

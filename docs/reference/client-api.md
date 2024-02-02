@@ -1,3 +1,7 @@
+---
+icon: fa6-brands:chrome
+---
+
 # Client API
 
 <NpmBadge package="@vuepress/client" />

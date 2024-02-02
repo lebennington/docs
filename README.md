@@ -6,10 +6,11 @@
 
 VuePress documentation repository.
 
+This branch holds a VuePress2 official docs powered by [VuePress Theme Hope](https://theme-hope.vuejs.press).
+
 ## Deployments
 
-- Release deployment: <https://v2.vuepress.vuejs.org>
-- Developer deployment: <https://vuepress.github.io>
+- Deployment: <https://vuejs.press>
 
 ## License
 

@@ -1,3 +1,7 @@
+---
+icon: fa6-solid:plug
+---
+
 # 插件 API
 
 <NpmBadge package="@vuepress/core" />
