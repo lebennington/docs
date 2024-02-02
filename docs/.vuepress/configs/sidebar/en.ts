@@ -66,6 +66,7 @@ export const enSidebar = sidebar({
     },
     {
       text: 'Official Ecosystem',
+      icon: 'fa6-solid:leaf',
       link: 'https://ecosystem.vuejs.press/',
     },
     {

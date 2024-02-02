@@ -66,6 +66,7 @@ export const zhSidebar = sidebar({
     },
     {
       text: '官方生态系统',
+      icon: 'fa6-solid:leaf',
       link: 'https://ecosystem.vuejs.press/zh/',
     },
     {
