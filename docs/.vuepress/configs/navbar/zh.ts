@@ -49,10 +49,12 @@ export const zhNavbar = navbar([
         children: [
           {
             text: '默认主题',
+            icon: 'fa6-solid:palette',
             link: 'https://ecosystem.vuejs.press/zh/themes/default/',
           },
           {
             text: '插件',
+            icon: 'fa6-solid:puzzle-piece',
             link: 'https://ecosystem.vuejs.press/zh/plugins/',
           },
         ],
@@ -72,6 +74,7 @@ export const zhNavbar = navbar([
           'theme',
           {
             text: 'Cookbook',
+            icon: 'fa6-solid:signs-post',
             link: 'cookbook/',
           },
         ],
@@ -81,14 +84,17 @@ export const zhNavbar = navbar([
         children: [
           {
             text: '生态系统',
+            icon: 'fa6-solid:leaf',
             link: 'https://ecosystem.vuejs.press/zh/',
           },
           {
             text: '市场',
+            icon: 'fa6-solid:cart-shopping',
             link: 'https://marketplace.vuejs.press/zh/',
           },
           {
             text: '贡献指南',
+            icon: 'fa6-solid:signs-post',
             link: 'https://github.com/vuepress/core/blob/main/CONTRIBUTING_zh.md',
           },
         ],
@@ -101,6 +107,7 @@ export const zhNavbar = navbar([
     children: [
       {
         text: '更新日志',
+        icon: 'fa6-solid:clock',
         link: 'https://github.com/vuepress/vuepress-next/blob/main/CHANGELOG.md',
       },
       {

@@ -2,24 +2,19 @@ import { sidebar } from 'vuepress-theme-hope'
 
 export const zhSidebar = sidebar({
   '/zh/guide/': [
-    {
-      text: '指南',
-      children: [
-        'introduction',
-        'getting-started',
-        'configuration',
-        'page',
-        'markdown',
-        'assets',
-        'i18n',
-        'deployment',
-        'theme',
-        'plugin',
-        'bundler',
-        'migration',
-        'troubleshooting',
-      ],
-    },
+    'introduction',
+    'getting-started',
+    'configuration',
+    'page',
+    'markdown',
+    'assets',
+    'i18n',
+    'deployment',
+    'theme',
+    'plugin',
+    'bundler',
+    'migration',
+    'troubleshooting',
   ],
   '/zh/advanced/': [
     {

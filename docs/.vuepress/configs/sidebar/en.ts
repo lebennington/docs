@@ -2,24 +2,19 @@ import { sidebar } from 'vuepress-theme-hope'
 
 export const enSidebar = sidebar({
   '/guide/': [
-    {
-      text: 'Guide',
-      children: [
-        'introduction',
-        'getting-started',
-        'configuration',
-        'page',
-        'markdown',
-        'assets',
-        'i18n',
-        'deployment',
-        'theme',
-        'plugin',
-        'bundler',
-        'migration',
-        'troubleshooting',
-      ],
-    },
+    'introduction',
+    'getting-started',
+    'configuration',
+    'page',
+    'markdown',
+    'assets',
+    'i18n',
+    'deployment',
+    'theme',
+    'plugin',
+    'bundler',
+    'migration',
+    'troubleshooting',
   ],
   '/advanced/': [
     {
@@ -66,10 +61,11 @@ export const enSidebar = sidebar({
     },
     {
       text: 'Ecosystem',
+      icon: 'fa6-solid:leaf',
       children: [
         {
           text: 'Default Theme',
-          icon: 'fa6-solid:leaf',
+          icon: 'fa6-solid:palette',
           link: 'https://ecosystem.vuejs.press/themes/default/',
         },
         {
@@ -78,7 +74,7 @@ export const enSidebar = sidebar({
           link: 'https://ecosystem.vuejs.press/plugins/',
         },
         {
-          text: 'VuePress MarketPlace',
+          text: 'MarketPlace',
           icon: 'fa6-solid:cart-shopping',
           link: 'https://marketplace.vuejs.press',
         },

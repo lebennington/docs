@@ -53,10 +53,12 @@ export const enNavbar = navbar([
         children: [
           {
             text: 'Default Theme',
+            icon: 'fa6-solid:palette',
             link: 'https://ecosystem.vuejs.press/themes/default/',
           },
           {
             text: 'Plugins',
+            icon: 'fa6-solid:puzzle-piece',
             link: 'https://ecosystem.vuejs.press/plugins/',
           },
         ],
@@ -77,6 +79,7 @@ export const enNavbar = navbar([
           'theme',
           {
             text: 'Cookbook',
+            icon: 'fa6-solid:signs-post',
             link: 'cookbook/',
           },
         ],
@@ -86,14 +89,17 @@ export const enNavbar = navbar([
         children: [
           {
             text: 'Ecosystem',
+            icon: 'fa6-solid:leaf',
             link: 'https://ecosystem.vuejs.press/',
           },
           {
             text: 'MarketPlace',
+            icon: 'fa6-solid:cart-shopping',
             link: 'https://marketplace.vuejs.press',
           },
           {
             text: 'Contributing Guide',
+            icon: 'fa6-solid:signs-post',
             link: 'https://github.com/vuepress/core/blob/main/CONTRIBUTING.md',
           },
         ],
@@ -106,6 +112,7 @@ export const enNavbar = navbar([
     children: [
       {
         text: 'Changelog',
+        icon: 'fa6-solid:clock',
         link: 'https://github.com/vuepress/vuepress-next/blob/main/CHANGELOG.md',
       },
       {

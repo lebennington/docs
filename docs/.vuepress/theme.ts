@@ -21,7 +21,7 @@ export default hopeTheme({
       footer:
         'Theme by <a href="https://theme-hope.vuejs.press" target="_blank">VuePress Theme Hope</a>',
 
-      copyright: 'MIT Licensed | Copyright © 2018-present Evan You',
+      copyright: 'MIT Licensed | Copyright © 2018-present VuePress Community',
 
       displayFooter: true,
 
@@ -43,7 +43,7 @@ export default hopeTheme({
       footer:
         '主题使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a>',
 
-      copyright: 'MIT 协议 | 版权所有 © 2018-至今 尤雨溪',
+      copyright: 'MIT 协议 | 版权所有 © 2018-至今 VuePress 社区',
 
       displayFooter: true,
 
@@ -55,6 +55,14 @@ export default hopeTheme({
   },
 
   plugins: {
+    docsearch: {
+      appId: '34YFD9IUQ2',
+      apiKey: '9a9058b8655746634e01071411c366b8',
+      indexName: 'vuepress',
+      searchParameters: {
+        facetFilters: ['tags:v2'],
+      },
+    },
     mdEnhance: {
       codetabs: true,
     },

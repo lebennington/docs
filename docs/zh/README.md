@@ -5,12 +5,15 @@ title: 首页
 heroImage: /images/hero.png
 actions:
   - text: 快速上手
+    icon: fa6-solid:lightbulb
     link: /zh/guide/getting-started.html
     type: primary
   - text: 项目简介
+    icon: fa6-solid:circle-info
     link: /zh/guide/introduction.html
     type: secondary
   - text: 市场
+    icon: fa6-solid:cart-shopping
     link: https://marketplace.vuejs.press/zh/
     type: secondary
 features:

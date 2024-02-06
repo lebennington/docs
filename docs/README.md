@@ -5,12 +5,15 @@ icon: fa6-solid:house
 heroImage: /images/hero.png
 actions:
   - text: Get Started
+    icon: fa6-solid:lightbulb
     link: /guide/getting-started.html
     type: primary
   - text: Introduction
+    icon: fa6-solid:circle-info
     link: /guide/introduction.html
     type: secondary
   - text: Marketplace
+    icon: fa6-solid:cart-shopping
     link: https://marketplace.vuejs.press/
     type: secondary
 features:
