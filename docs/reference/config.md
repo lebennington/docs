@@ -4,9 +4,6 @@ icon: fa6-solid:gear
 
 # Config
 
-<NpmBadge package="@vuepress/cli" />
-<NpmBadge package="@vuepress/core" />
-
 ## Site Config
 
 ### base

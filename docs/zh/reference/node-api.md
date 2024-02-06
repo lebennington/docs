@@ -4,9 +4,7 @@ icon: fa6-brands:node-js
 
 # Node API
 
-<NpmBadge package="@vuepress/core" />
-
-Node API 是由 [@vuepress/core](https://www.npmjs.com/package/@vuepress/core) 包提供的，同时也可以通过 `vuepress/core` 来引入。
+Node API 可以通过 `vuepress/core` 来引入。
 
 ## App
 

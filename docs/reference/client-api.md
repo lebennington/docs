@@ -4,11 +4,36 @@ icon: fa6-brands:chrome
 
 # Client API
 
-<NpmBadge package="@vuepress/client" />
-
-Client API is provided by [@vuepress/client](https://www.npmjs.com/package/@vuepress/client) package, which is also available as `vuepress/client`.
+Client API can be imported from `vuepress/client`.
 
 ## Composition API
+
+### useClientData
+
+- Details:
+
+  Returns all the client data ref objects.
+
+  Each property can also be accessed by the following composition APIs.
+
+- Example:
+
+```vue
+<script setup lang="ts">
+import { useClientData } from 'vuepress/client'
+
+const {
+  pageData,
+  pageFrontmatter,
+  pageHead,
+  pageHeadTitle,
+  pageLang,
+  routeLocale,
+  siteData,
+  siteLocaleData,
+} = useClientData()
+</script>
+```
 
 ### usePageData
 

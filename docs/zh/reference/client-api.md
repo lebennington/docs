@@ -4,11 +4,36 @@ icon: fa6-brands:chrome
 
 # 客户端 API
 
-<NpmBadge package="@vuepress/client" />
+客户端 API 可以通过 `vuepress/client` 来引入。
 
-客户端 API 是由 [@vuepress/client](https://www.npmjs.com/package/@vuepress/client) Package 提供的，同时也可以通过 `vuepress/client` 来引入。
+## 组合式 API
 
-## Composition API
+### useClientData
+
+- 详情：
+
+  返回所有客户端数据的 Ref 对象。
+
+  每个属性也可以通过下列的组合式 API 来访问。
+
+- 示例：
+
+```vue
+<script setup lang="ts">
+import { useClientData } from 'vuepress/client'
+
+const {
+  pageData,
+  pageFrontmatter,
+  pageHead,
+  pageHeadTitle,
+  pageLang,
+  routeLocale,
+  siteData,
+  siteLocaleData,
+} = useClientData()
+</script>
+```
 
 ### usePageData
 

@@ -4,8 +4,6 @@ icon: fa6-solid:puzzle-piece
 
 # Built-in Components
 
-<NpmBadge package="@vuepress/client" />
-
 ## ClientOnly
 
 - Usage:
