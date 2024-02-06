@@ -367,19 +367,6 @@ export default {
 
 ## Page 属性
 
-### key
-
-- 类型： `string`
-
-- 详情：
-
-  该 Page 的标识。
-
-  Page Key 会被用作页面路由的 [name](https://router.vuejs.org/api/#name-2)。
-
-- 参考：
-  - [Built-in Components > Content](./components.md#content)
-
 ### path
 
 - 类型： `string`
@@ -456,7 +443,6 @@ interface PageHeader {
 
 ```ts
 interface PageData {
-  key: string
   path: string
   title: string
   lang: string
@@ -609,14 +595,13 @@ interface MarkdownLink {
 
 - 详情：
 
-  附加到 vue-router 路由记录上的额外数据。
+  附加到页面路由记录上的额外数据。
 
 - 参考：
   - [Frontmatter > routeMeta](./frontmatter.md#routemeta)
-  - [vue-router > API 参考 > RouteRecordRaw > meta](https://router.vuejs.org/zh/api/#meta)
 
 ::: tip Route Meta 和 Page Data 的区别是什么？
-[Route Meta](#routemeta) 和 [Page Data](#data) 都可以在客户端代码中使用。然而， Route Meta 是附加在路由记录上的，因此当用户进入你的站点时，所有页面的 Route Meta 都会立即被加载。相比之下， Page Data 是存储在单独的文件中的，只有在用户进入对应页面时才会被加载。
+[Route Meta](#routemeta) 和 [Page Data](#data) 都可以在客户端代码中使用。然而， Route Meta 是附加在页面路由记录上的，因此当用户进入你的站点时，所有页面的 Route Meta 都会立即被加载。相比之下， Page Data 是存储在单独的文件中的，只有在用户进入对应页面时才会被加载。
 
 因此，不建议在 Route Meta 中存储大量的信息，否则在站点有很多页面时，将会影响站点的初始加载速度。
 :::

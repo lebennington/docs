@@ -27,7 +27,7 @@ export const enNavbar = navbar([
     prefix: '/reference/',
     children: [
       {
-        text: 'VuePress',
+        text: 'Core',
         children: [
           {
             text: 'CLI',
@@ -47,6 +47,19 @@ export const enNavbar = navbar([
         text: 'Bundlers',
         prefix: 'bundler/',
         children: ['vite', 'webpack'],
+      },
+      {
+        text: 'Ecosystem',
+        children: [
+          {
+            text: 'Default Theme',
+            link: 'https://ecosystem.vuejs.press/themes/default/',
+          },
+          {
+            text: 'Plugins',
+            link: 'https://ecosystem.vuejs.press/plugins/',
+          },
+        ],
       },
     ],
   },
@@ -72,11 +85,11 @@ export const enNavbar = navbar([
         text: 'Resources',
         children: [
           {
-            text: 'Official Ecosystem',
+            text: 'Ecosystem',
             link: 'https://ecosystem.vuejs.press/',
           },
           {
-            text: 'VuePress MarketPlace',
+            text: 'MarketPlace',
             link: 'https://marketplace.vuejs.press',
           },
           {

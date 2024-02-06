@@ -5,19 +5,19 @@ export const enSidebar = sidebar({
     {
       text: 'Guide',
       children: [
-        '/guide/introduction.md',
-        '/guide/getting-started.md',
-        '/guide/configuration.md',
-        '/guide/page.md',
-        '/guide/markdown.md',
-        '/guide/assets.md',
-        '/guide/i18n.md',
-        '/guide/deployment.md',
-        '/guide/theme.md',
-        '/guide/plugin.md',
-        '/guide/bundler.md',
-        '/guide/migration.md',
-        '/guide/troubleshooting.md',
+        'introduction',
+        'getting-started',
+        'configuration',
+        'page',
+        'markdown',
+        'assets',
+        'i18n',
+        'deployment',
+        'theme',
+        'plugin',
+        'bundler',
+        'migration',
+        'troubleshooting',
       ],
     },
   ],
@@ -43,7 +43,7 @@ export const enSidebar = sidebar({
   ],
   '/reference/': [
     {
-      text: 'VuePress Reference',
+      text: 'Core',
       icon: 'fa6-brands:vuejs',
       collapsible: true,
       children: [
@@ -58,21 +58,31 @@ export const enSidebar = sidebar({
       ],
     },
     {
-      text: 'Bundlers Reference',
+      text: 'Bundlers',
       icon: 'fa6-solid:boxes-packing',
       prefix: 'bundler/',
       collapsible: true,
       children: ['vite', 'webpack'],
     },
     {
-      text: 'Official Ecosystem',
-      icon: 'fa6-solid:leaf',
-      link: 'https://ecosystem.vuejs.press/',
-    },
-    {
-      text: 'VuePress MarketPlace',
-      icon: 'fa6-solid:cart-shopping',
-      link: 'https://marketplace.vuejs.press',
+      text: 'Ecosystem',
+      children: [
+        {
+          text: 'Default Theme',
+          icon: 'fa6-solid:leaf',
+          link: 'https://ecosystem.vuejs.press/themes/default/',
+        },
+        {
+          text: 'Plugins',
+          icon: 'fa6-solid:puzzle-piece',
+          link: 'https://ecosystem.vuejs.press/plugins/',
+        },
+        {
+          text: 'VuePress MarketPlace',
+          icon: 'fa6-solid:cart-shopping',
+          link: 'https://marketplace.vuejs.press',
+        },
+      ],
     },
   ],
 })

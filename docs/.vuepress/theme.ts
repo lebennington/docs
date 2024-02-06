@@ -6,7 +6,8 @@ export default hopeTheme({
   iconAssets: 'iconify',
 
   logo: '/images/hero.png',
-  repo: 'vuepress/docs',
+  repo: 'vuepress/core',
+  docsRepo: 'vuepress/docs',
   docsDir: 'docs',
 
   locales: {
